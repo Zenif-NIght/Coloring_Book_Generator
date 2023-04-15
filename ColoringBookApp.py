@@ -38,7 +38,7 @@ class ColoringBookApp:
         self.smoothing_slider.pack()
 
         # create the contrast slider
-        self.contrast_slider = tk.Scale(self.main_frame, label="Contrast", from_=-100, to=100, orient=tk.HORIZONTAL, command=self.update_image)
+        self.contrast_slider = tk.Scale(self.main_frame, label="Contrast", from_=0, to=100, orient=tk.HORIZONTAL, command=self.update_image)
         # set to 50
         self.contrast_slider.set(50)
         self.contrast_slider.pack()
